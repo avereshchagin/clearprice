@@ -1,0 +1,28 @@
+# Intellij
+*.iml
+.idea/
+*.ipr
+*.iws
+/out/
+.idea_modules/
+atlassian-ide-plugin.xml
+
+# Maven
+build/
+target/
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+.gradle/
+local.properties
+*.log
+.navigation/
+captures/
+
+# Mac
+.DS_Store

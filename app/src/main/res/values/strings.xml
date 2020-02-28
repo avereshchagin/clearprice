@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clear Price</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_purchases_list_title">Clear Price</string>
+    <string name="fragment_add_purchase_title">Add Purchase</string>
+    <string name="fragment_settings_title">Settings</string>
+</resources>
