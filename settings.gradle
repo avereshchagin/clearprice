@@ -1,2 +1,6 @@
 rootProject.name='Clear Price'
-include ':app'
+include ':app',
+        ':modules:core',
+        ':modules:core-api',
+        ':modules:core-impl',
+        ':modules:cart'
