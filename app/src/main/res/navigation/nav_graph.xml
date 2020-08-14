@@ -3,22 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/PurchasesListFragment">
+    app:startDestination="@id/nav_cart">
 
-    <fragment
-        android:id="@+id/PurchasesListFragment"
-        android:name="com.github.avereshchagin.clearprice.platform.PurchasesListFragment"
-        android:label="@string/fragment_purchases_list_title"
-        tools:layout="@layout/fragment_purchases_list">
-
-        <action
-            android:id="@+id/action_PurchasesListFragment_to_AddPurchaseFragment"
-            app:destination="@id/AddPurchaseFragment" />
-
-        <action
-            android:id="@+id/action_PurchasesListFragment_to_SettingsFragment"
-            app:destination="@id/SettingsFragment" />
-    </fragment>
+    <include app:graph="@navigation/nav_cart" />
 
     <fragment
         android:id="@+id/AddPurchaseFragment"

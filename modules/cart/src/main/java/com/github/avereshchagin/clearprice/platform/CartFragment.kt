@@ -5,10 +5,14 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import androidx.lifecycle.ViewModelProvider
 import com.github.avereshchagin.clearprice.R
+import com.github.avereshchagin.clearprice.viewmodel.CartViewModel
 import kotlinx.android.synthetic.main.fragment_cart.*
 
 class CartFragment : BaseFragment() {
+
+    private lateinit var viewModel: CartViewModel
 
     override fun titleId() = R.string.fragment_cart_title
 
@@ -18,6 +22,9 @@ class CartFragment : BaseFragment() {
         super.onCreate(savedInstanceState)
 
         setHasOptionsMenu(true)
+
+        val viewModelFactory = ViewModelProvider.AndroidViewModelFactory(requireActivity().application)
+        ViewModelProvider(this, viewModelFactory).get(CartViewModel::class.java)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

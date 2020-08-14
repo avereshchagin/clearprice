@@ -32,6 +32,9 @@ android {
 }
 
 dependencies {
+    implementation project(':modules:core')
+    implementation project(':modules:cart')
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "androidx.appcompat:appcompat:$supportLibraryVersion"
     implementation "androidx.core:core-ktx:$coreVersion"

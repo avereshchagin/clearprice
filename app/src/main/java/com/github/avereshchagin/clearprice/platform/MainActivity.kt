@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         findNavController(R.id.nav_host_fragment).addOnDestinationChangedListener {
                 _: NavController, navDestination: NavDestination, _: Bundle? ->
-            invalidateToolbar(navDestination.id != R.id.PurchasesListFragment)
+            invalidateToolbar(navDestination.id != R.id.CartFragment)
         }
     }
 
