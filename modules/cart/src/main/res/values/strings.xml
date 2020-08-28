@@ -2,4 +2,8 @@
     <string name="fragment_cart_title">Cart</string>
     <string name="action_history">History</string>
     <string name="action_settings">Settings</string>
+
+    <string name="label_base_currency">Base Currency</string>
+    <string name="label_cart_currency">Cart Currency</string>
+    <string name="label_tax">Tax (%)</string>
 </resources>
