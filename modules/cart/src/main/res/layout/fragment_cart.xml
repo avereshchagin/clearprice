@@ -7,6 +7,59 @@
     android:layout_height="match_parent"
     tools:context="com.github.avereshchagin.clearprice.platform.CartFragment">
 
+    <TextView
+        android:id="@+id/base_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/label_base_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/base_currency"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/label_base_currency"
+        android:textSize="14sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_cart_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/base_currency"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/label_cart_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_cart_currency"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/label_base_currency"
+        android:textSize="14sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_cart_currency"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:hint="@string/label_tax">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
